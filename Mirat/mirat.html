@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phénix - Création Digitale & IA</title>
+    <link rel="stylesheet" href="mirat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Samira.</div>
+        <div class="links">
+            <a href="#home">Accueil</a>
+            <a href="#work">Services</a>
+            <a href="#projects">Portfolio</a>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <a href="#home">Accueil</a>
+            <a href="#work">Services</a>
+            <a href="#projects">Portfolio</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h4>Chargée de Création Digitale @ Clientflow Africa</h4>
+            <h1>Je transforme tes idées en <span>sites, vidéos & affiches qui vendent</span></h1>
+            <p>Portfolio personnel + Dashboard admin + Création de contenu. Je gère de A à Z : site vitrine, landing page, vidéo publicitaire, affiche Canva.</p>
+            <div class="btns">
+                <button class="primary">Voir mes projets</button>
+                <button class="secondary">Me contacter sur WhatsApp</button>
+            </div>
+            <div class="social-links">
+                <i class="fa-brands fa-behance"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="mirat.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="work" class="services">
+        <div class="service"><i class="fa-solid fa-code"></i><h3>Sites Web</h3><p>Landing pages & vitrines HTML/CSS/JS</p></div>
+        <div class="service"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Vidéos Pub </h3><p>Génération de vidéos publicitaires </p></div>
+        <div class="service"><i class="fa-solid fa-palette"></i><h3>Affiches & Visuels</h3><p>Design Canva + outils pour réseaux sociaux</p></div>
+    </section>
+    <script>
+        function hamburg(){
+            document.querySelector(".dropdown").style.transform = "translateY(0%)"
+        }
+        function cancel(){
+            document.querySelector(".dropdown").style.transform = "translateY(-100%)"
+        }
+    </script>
+</body>
+</html>
